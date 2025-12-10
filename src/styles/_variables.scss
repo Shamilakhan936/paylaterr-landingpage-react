@@ -1,0 +1,30 @@
+// Color Variables
+$primary-color: #6161FF;
+$primary-hover: #4d4dff;
+$primary-light: #7B7BFF;
+$primary-gradient: linear-gradient(135deg, #6161FF 0%, #7B7BFF 100%);
+
+$text-dark: #1a1a1a;
+$text-gray: #737B8C;
+$text-light-gray: #666;
+$text-white: #FFFFFF;
+
+$bg-primary: #FCFAF8;
+$bg-white: #FFFFFF;
+$border-color: #E2E4E9;
+$border-light: #e5e5e5;
+
+// Font Families
+$font-primary: "Montserrat", sans-serif;
+$font-heading: "Montserrat", sans-serif;
+
+// Spacing
+$section-padding-desktop: 80px 80px;
+$section-padding-tablet: 40px 24px;
+$section-padding-mobile: 30px 16px;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+

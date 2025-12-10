@@ -1,0 +1,145 @@
+@import '../../styles/variables';
+
+/* Final CTA Section */
+section {
+    padding: $section-padding-desktop;
+}
+
+.final-cta {
+    background: $primary-color;
+    border-radius: 24px;
+    padding: 60px 60px;
+    text-align: center;
+    color: $text-white;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        font-family: $font-heading;
+        color: $text-white;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 40px;
+        max-width: 670px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: $font-primary;
+    }
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-primary {
+    background: $bg-white;
+    color: $primary-color;
+    padding: 16px 40px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: $font-primary;
+
+    i {
+        color: $primary-color;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.cta-secondary {
+    background: transparent;
+    color: $text-white;
+    padding: 16px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: $font-primary;
+
+    i {
+        color: $text-white;
+    }
+
+    img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        margin-right: 4px;
+    }
+
+    &:hover {
+        background: rgba(97, 97, 255, 0.1);
+    }
+}
+
+/* Responsive */
+@media (max-width: $breakpoint-tablet) {
+    section {
+        padding: $section-padding-tablet;
+    }
+
+    .final-cta {
+        padding: 40px 24px;
+        border-radius: 16px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 32px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    section {
+        padding: $section-padding-mobile;
+    }
+
+    .final-cta {
+        padding: 32px 16px;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+}

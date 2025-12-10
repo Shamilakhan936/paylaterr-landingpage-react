@@ -1,0 +1,135 @@
+@import '../../styles/variables';
+
+/* Hero Section */
+section {
+    padding: $section-padding-desktop;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 80px 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+
+    .callout-banner {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 8px 20px;
+        border: 1px solid $border-color;
+        border-radius: 50px;
+        margin-bottom: 32px;
+        font-size: 14px;
+        margin-top: 80px;
+        color: $primary-color;
+        font-weight: 500;
+        font-family: $font-primary;
+
+        i {
+            color: $primary-color;
+            font-size: 16px;
+        }
+
+        img {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+        }
+    }
+
+    h1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: $text-dark;
+        font-family: $font-heading;
+
+        .highlight {
+            color: $primary-color;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        color: $text-gray;
+        margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $font-primary;
+    }
+}
+
+.get-started-btn {
+    background: $primary-color;
+    color: $text-white;
+    padding: 16px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+
+    &:hover {
+        background: $primary-hover;
+        transform: translateY(-2px);
+    }
+}
+
+/* Responsive */
+@media (max-width: $breakpoint-tablet) {
+    section {
+        padding: $section-padding-tablet;
+    }
+
+    .hero {
+        padding: 40px 24px 60px;
+
+        .callout-banner {
+            font-size: 8px;
+            padding: 6px 14px;
+            margin-top: 40px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            text-align: center;
+
+            span {
+                font-size: 11px;
+            }
+
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    section {
+        padding: $section-padding-mobile;
+    }
+
+    .hero {
+        padding: 30px 16px 50px;
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+}
